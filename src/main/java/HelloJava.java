@@ -56,6 +56,7 @@ public class HelloJava extends JApplet {
 				if (pp.MapDepthToColorCoordinates(p3,p2)) {
 					for (int xy=0;xy<p2.length;xy++) {
 						if (depthmap[xy]==untrusted[0] || depthmap[xy]==untrusted[1]) continue;
+
 						int x1=(int)p2[xy].x, y1=(int)p2[xy].y;
 						if (x1<0 || x1>=csize[0] || y1<0 || y1>=csize[1]) continue;
 						df.image.setRGB(x1,y1,(int)0xff00ff00);
